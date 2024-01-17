@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1">
+
+    <TextView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:fontFamily="@font/fontik"
+        android:gravity="center"
+        android:text="SETTINGS"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="345dp"
+        android:layout_height="255dp"
+        android:background="@color/bg_setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:id="@+id/rd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/sound_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="100dp"
+                android:background="@drawable/custom_radio_selector"
+                android:button="@color/alphaaa"
+                android:checked="true" />
+
+
+            <RadioButton
+                android:id="@+id/sound_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/custom_radio_selector"
+                android:button="@color/alphaaa"
+                android:checked="false" />
+
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/soff"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sound_on"
+            android:button="@color/alphaaa" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/sound_off"
+            android:button="@color/alphaaa" />
+<TextView
+    android:id="@+id/btn_rule"
+    android:layout_width="180dp"
+    android:layout_height="70dp"
+    android:text="Rules"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="34sp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/btn_2"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rulesinfo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_setting"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Your task is to memorize the position of the pictures, and when they disappear, find the one that will be indicated by the game.Good luck!"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
